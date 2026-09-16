@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="kk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FINSHIELD</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><div class="logo">F <b>FIN</b>SHIELD</div><nav><a href="#check">Тексеру</a><a href="#how">Қалай жұмыс істейді</a><a href="#quiz">Cyber Education</a></nav><span class="live">● Жүйе белсенді</span></header>
+<main>
+<section class="hero"><div><small>DIGITAL ECONOMIC SECURITY</small><h1>Киберқауіпті <em>залалдан бұрын</em> анықтаңыз.</h1>
+<p>FINSHIELD — цифрлық операциялардағы аномалияларды талдап, киберқауіп деңгейі мен ықтимал экономикалық шығынды бағалайтын студенттік MVP.</p>
+<a class="btn" href="#check">Операцияны тексеру →</a></div>
+<div class="heroCard"><small>CYBER RISK SCORE</small><div class="circle">78<sup>/100</sup></div><strong>ЖОҒАРЫ ҚАУІП</strong><p>3 күдікті фактор анықталды</p></div></section>
+<section class="stats"><div><small>Бақыланған операциялар</small><b>1,248</b></div><div><small>Анықталған қауіптер</small><b>37</b></div><div><small>Жоғары тәуекел</small><b>8</b></div><div><small>Қорғалған сома</small><b>12.4 млн ₸</b></div></section>
+
+<section id="check"><small>01 / RISK ANALYSIS</small><h2>Операцияны тексеру</h2><p class="muted">Тестілік деректермен FINSHIELD алгоритмін байқап көріңіз.</p>
+<div class="grid"><div class="card form">
+<label>Операция сомасы, ₸<input id="amount" type="number" value="4500000"></label>
+<label>Алушы<select id="recipient"><option value="0">Тұрақты</option><option value="20" selected>Жаңа</option></select></label>
+<label>Құрылғы<select id="device"><option value="0">Таныс</option><option value="20" selected>Жаңа</option></select></label>
+<label>Уақыт<select id="time"><option value="0">Қалыпты</option><option value="15" selected>00:00–06:00</option></select></label>
+<label>Реквизиттер өзгерді ме?<select id="details"><option value="0">Жоқ</option><option value="25" selected>Иә</option></select></label>
+<button class="btn" onclick="analyze()">ТӘУЕКЕЛДІ ТАЛДАУ</button></div>
+<div class="card result"><small>НӘТИЖЕ</small><div id="score">100<sup>/100</sup></div><span id="level" class="pill red">КРИТИКАЛЫҚ ТӘУЕКЕЛ</span><p id="recommend">Операцияны растаудан бұрын қосымша тексеру жүргізіңіз.</p><h3>Анықталған факторлар</h3><ul id="factors"><li>Жоғары сома</li><li>Жаңа алушы</li><li>Жаңа құрылғы</li><li>Күмәнді уақыт</li><li>Реквизиттердің өзгеруі</li></ul></div></div></section>
+
+<section id="how" class="dark"><small>02 / HOW IT WORKS</small><h2>FINSHIELD қалай жұмыс істейді?</h2><div class="steps">
+<article><b>01</b><h3>Деректер</h3><p>Сома, уақыт, құрылғы, алушы және операция тарихы талданады.</p></article>
+<article><b>02</b><h3>Аномалия</h3><p>Қалыпты мінез-құлықтан ауытқулар анықталады.</p></article>
+<article><b>03</b><h3>Risk Score</h3><p>0–100 шкаласы бойынша киберқауіп деңгейі есептеледі.</p></article>
+<article><b>04</b><h3>Ескерту</h3><p>Қауіпті әрекет анықталса, пайдаланушыға ұсыныс беріледі.</p></article></div></section>
+
+<section id="quiz"><small>03 / CYBER EDUCATION</small><h2>Киберқауіпсіздік тесті</h2><div class="card quiz"><h3>«Банк аккаунтыңыз 30 минутта бұғатталады» деген хабарлама келді. Сілтеме бар. Не істейсіз?</h3>
+<button onclick="quiz(this,false)">A. Сілтемеге бірден өтемін</button><button onclick="quiz(this,true)">B. Банктің ресми арнасы арқылы тексеремін</button><button onclick="quiz(this,false)">C. SMS кодын жіберемін</button><div id="qresult"></div></div></section>
+
+<section><small>04 / ECONOMIC IMPACT</small><h2>Экономикалық тәуекел</h2><div class="grid"><div class="card form"><label>Ықтимал зиян, ₸<input id="loss" type="number" value="2000000"></label><label>Қауіп ықтималдығы, %<input id="prob" type="number" value="15"></label><button class="btn" onclick="calc()">Есептеу</button><div class="loss" id="lossResult">300 000 ₸</div><p class="muted">Формула: P × L.</p></div><div class="card impact"><h3>Негізгі қағида</h3><p>Киберқауіп болғаннан кейін әрекет ету емес, аномалияны ерте байқап, ықтимал экономикалық шығынды азайту.</p><b>Аномалия → Risk Score → Ескерту → Тексеру → Алдын алу</b></div></div></section>
+</main><footer><b>FINSHIELD</b><span>Студенттік MVP • Cybersecurity in Economics</span><span>Тестілік деректер. Нақты қаржылық жүйелерге қосылмаған.</span></footer>
+<script src="script.js"></script></body></html>
